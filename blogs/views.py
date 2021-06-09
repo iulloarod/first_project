@@ -27,4 +27,7 @@ def show(request,number):
 def edit(request,number):
 	return HttpResponse(f"placeholder para editar el blog {number}")
 
+from django.http import JsonResponse
 
+def json(request):
+	return JsonResponse({"Nombre" : "Don Ignacio"})
